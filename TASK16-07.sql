@@ -34,11 +34,11 @@ CREATE TABLE Teachers_Courses_Students(
 -- Insert entries into TeacherDetails table
 INSERT INTO TeacherDetails 
 VALUES
-(1, 'Alice Smith', '123-456-7890'),
-(2, 'Bob Johnson', '234-567-8901'),
-(3, 'Carol Williams', '345-678-9012'),
-(4, 'David Brown', '456-789-0123'),
-(5, 'Eva Davis', '567-890-1234');
+(1, 'teacher1', '123-456-7890'),
+(2, 'teacher2', '234-567-8901'),
+(3, 'teacher3', '345-678-9012'),
+(4, 'teacher4', '456-789-0123'),
+(5, 'teacher5', '567-890-1234');
 
 -- Insert entries into Courses table
 INSERT INTO Courses 
@@ -52,34 +52,34 @@ VALUES
 -- Insert entries into Students table
 INSERT INTO Students 
 VALUES
-(1, 'John Doe'),
-(2, 'Jane Smith'),
-(3, 'Emily Johnson'),
-(4, 'Michael Brown'),
-(5, 'Sarah Davis');
+(1, 'student1'),
+(2, 'student2'),
+(3, 'student3'),
+(4, 'student4'),
+(5, 'student5');
 
 -- Insert entries into Teachers table
 INSERT INTO Teachers 
 VALUES
 (1, 1),
-(2, 2),
+(1, 2),
 (3, 3),
 (4, 4),
-(5, 5);
+(4, 5);
 
 -- Insert entries into Teachers_Courses_Students table
 INSERT INTO Teachers_Courses_Students 
 VALUES
 (1, 1, 1),
-(2, 2, 2),
-(3, 3, 3),
-(4, 4, 4),
-(5, 5, 5),
+(1, 2, 1),
+(3, 3, 2),
+(4, 4, 3),
+(4, 5, 3),
 (1, 2, 3),
-(2, 3, 4),
-(3, 4, 5),
+(1, 1, 4),
+(3, 3, 5),
 (4, 5, 1),
-(5, 1, 2);
+(4, 1, 2);
 
 
 
